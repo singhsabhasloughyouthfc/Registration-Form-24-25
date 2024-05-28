@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Registration Form 2023-2024</title>
+</head>
+<body>
+    <h1>Singh Sabha Slough Youth Football Club</h1>
+    <h2>2023 - 2024 Season - Player Registration Form</h2>
+
+    <form action="submit_registration.php" method="post">
+        <fieldset>
+            <legend>Parent Details</legend>
+            <label for="parent-name">Parent Full Name:</label>
+            <input type="text" id="parent-name" name="parent_name" required><br><br>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required><br><br>
+
+            <label for="postcode">Postcode:</label>
+            <input type="text" id="postcode" name="postcode" required><br><br>
+
+            <label for="phone-number">Phone Number:</label>
+            <input type="tel" id="phone-number" name="phone_number" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="fan-number">FAN Number:</label>
+            <input type="text" id="fan-number" name="fan_number"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Player Details</legend>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first_name" required><br><br>
+
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" name="surname" required><br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label for="player-fan-number">FAN Number:</label>
+            <input type="text" id="player-fan-number" name="player_fan_number"><br><br>
+
+            <label for="team">Team - Singh Sabha Slough Youth F.C U____:</label>
+            <select id="team" name="team" required>
+                <option value="Lions">Lions</option>
+                <option value="Tigers">Tigers</option>
+                <option value="Scorpionz">Scorpionz</option>
+            </select><br><br>
+
+            <label for="photo">Head and Shoulders Photo:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required><br><br>
+
+            <label for="passport">Photo of Passport Page or Birth Certificate:</label>
+            <input type="file" id="passport" name="passport" accept="image/*" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Payment Details</legend>
+            <p>Registration Fee: £175.00</p>
+
+            <label for="account-name">Account Name:</label>
+            <input type="text" id="account-name" name="account_name" value="SRI GURU SINGH SABHA SLOUGH" readonly><br><br>
+
+            <label for="sort-code">Sort Code:</label>
+            <input type="text" id="sort-code" name="sort_code" value="20-78-61" readonly><br><br>
+
+            <label for="account-number">Account Number:</label>
+            <input type="text" id="account-number" name="account_number" value="30910961" readonly><br><br>
+
+            <label for="reference">Payment Reference (Player Name and Age Group):</label>
+            <input type="text" id="reference" name="reference" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Consent and Approval</legend>
+            <label for="parent-signature">Parent Signature:</label>
+            <input type="text" id="parent-signature" name="parent_signature" required><br><br>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required><br><br>
+
+            <label for="print-name">Print Name:</label>
+            <input type="text" id="print-name" name="print_name" required><br><br>
+
+            <label for="manager-signature">Team Manager Signature:</label>
+            <input type="text" id="manager-signature" name="manager_signature" required><br><br>
+
+            <label for="manager-date">Date:</label>
+            <input type="date" id="manager-date" name="manager_date" required><br><br>
+
+            <label for="manager-print-name">Print Name:</label>
+            <input type="text" id="manager-print-name" name="manager_print_name" required><br><br>
+        </fieldset>
+
+        <p>Once the registration process has been accepted and approved by the Club Secretary, the League, and the FA, we will then issue each parent a copy of the Club's Code of Conduct, Disciplinary Procedures, and Club Guidelines that all players and parents must sign and adhere to.</p>
+
+        <input type="submit" value="Submit Registration">
+    </form>
+</body>
+</html>
